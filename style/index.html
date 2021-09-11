@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="pt-br"> 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/main.css">
+
+    <!-- RESPONSIVIDADE-->
+    <link rel="stylesheet" href="../style/responsive.css"> 
+    <!-- owl css --> 
+    <link rel="stylesheet" href="../style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="../style/owl/owl.theme.default.min.css">
+
+
+    <title>BruFix Filmes Online</title>
+
+</head>
+<body>
+ <header>
+
+     <div class="container">
+
+<h2 class="logo">BRUFIX</h2>
+
+<nav>
+<a href="#"> Inicio</a>
+<a href="#"> Séries</a>
+<a href="#"> Filmes</a>
+<a href="#"> Documentários</a>
+</nav>
+
+
+</div>
+ </header>
+
+ <main> 
+
+ <div class="filme-principal">
+   <div class="container">
+    <h3 class="titulo">LAW E ORDER</h3>
+  <p  class="descricao"> Detetives que fazem parte da Unidade de Vítimas Especiais da polícia de Nova York investigam crimes de natureza sexual, como estupros, em que a vítima sobrevive, e auxilia as autoridades na investigação.</p>
+<div class="botoes"> 
+<button role="button" class="botao">
+  <i class="fas fa-play"></i>
+  <a href="https://www.youtube.com/watch?v=O53wYUc_fA4">
+ ASSISTIR AGORA 
+</button></a>
+
+
+
+
+<button role="button" class="botao" class="alert" value="Clique" onClick="javascript: abrir();">
+  <i class="fas fa-info-circle"></i>
+
+  <a id="janela" style="display: none; position: absolute;">
+    <iframe id="iframejanela" name="iframejanela" frameborder="3" style="height: 200px; width: 400px;"></iframe>
+    <span class="closebtn" onClick="window.frameElement.parentElement.style.display='none';">&times;</span>
+  </a>
+ 
+ MAIS INFORMAÇÕES
+</button>
+</div>
+</div>   
+
+</div>
+
+ </main>
+<div class="carousel-filmes">
+<div class="owl-carousel owl-theme"> 
+  <div class="item">
+     <img class="box-filme" src="../img/house_of.jpg" alt="" srcset="">
+
+ </div>
+
+ <div class="item">
+  <img class="box-filme" src="../img/aia.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/friends.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/gossipgirls.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/rbd.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/annewithE.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/himym.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/desejosombrio.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/dark.jpg" alt="" srcset="">
+
+</div>
+
+<div class="item">
+  <img class="box-filme" src="../img/thewithcer.jpg" alt="" srcset="">
+
+</div>
+
+</div>
+</div>
+
+ <script src="https://kit.fontawesome.com/a6cfc3c905.js" crossorigin="anonymous"></script>
+ <script src="../js/owl/jquery.min.js" > </script>
+ <script src="../js/owl/owl.carousel.min.js" > </script>
+<script src="../js/owl/setup.js"></script>
+
+</body>
+</html>
+<script language="javascript">
+  function abrir(){
+    document.getElementById('janela').style.display='';
+      window.open('iframe2.php', "iframejanela");
+}
+</script>
